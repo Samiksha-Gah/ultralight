@@ -2,32 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First HTML Assignment</title>
 </head>
 
 <body>
 
-    <h1>assignment one</h1>
+    <h1>Assignment One</h1>
 
-    <p>today is january 30th, 2024.</p>
+    <p>Today is January 30<sup>th</sup>, 2024.</p>
 
-    <h2>yay!</h2>
+    <h2>Yay!</h2>
 
-    <p>i can make you <strong>laugh. </strong> really? <em> really. </em> try <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clicking here. </a></p>
+    <p>I can make you <strong>laugh</strong>. Really? <em>Really.</em> Try <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clicking here</a>.</p>
 
-    <h2>things I ate today </h2>
+    <h2>Things I Ate Today</h2>
 
     <ul>
-        <li> lo mein </li>
-        <li> eggs </li>
-        <li> fortune cookie </li>
+        <li>Lo Mein</li>
+        <li>Eggs</li>
+        <li>Fortune Cookie</li>
     </ul>
 
     <h2>Tables</h2>
 
-    <table>
+    <table border="1">
+        <caption>Sample Table</caption>
         <tr>
             <th>Header 1</th>
             <th>Header 2</th>
@@ -44,15 +43,48 @@
 
     <h2>Forms</h2>
 
-    <form>
+    <form action="submit.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <br>
         <input type="submit" value="Submit">
     </form>
+
+    <h2>Selections</h2>
+
+    <p>Favorite Color:</p>
+    <input type="color" id="color" name="color">
+
+    <p>Agree to Terms:</p>
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">I agree to the terms and conditions</label>
+
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <p>Favorite Fruit:</p>
+    <select id="fruit" name="fruit">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grape</option>
+    </select>
+
+    <h2>Text Effects</h2>
+
+    <p>This text has a <del>strikethrough</del>.</p>
+    <p>This text has <sub>subscript</sub> and <sup>superscript</sup>.</p>
 
     <div>
         <h2>Unique Section</h2>
