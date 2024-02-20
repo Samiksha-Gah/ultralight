@@ -3,48 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative HTML Library</title>
+    <title>Creative Library Experience</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to The Dream Library</h1>
-        <p>Explore the realms of imagination</p>
+        <h1>Welcome to the Imaginary Library!</h1>
+        <p>Explore the world of books with us.</p>
     </header>
-    <section id="fantasy-section">
-        <h2>Fantasy Adventures</h2>
-        <article>
-            <h3>The Chronicles of Mystara</h3>
-            <p>Embark on a journey through mystical lands and ancient ruins as you uncover the secrets of the enchanted world of Mystara.</p>
-        </article>
-        <article>
-            <h3>Dragons of Dracoria</h3>
-            <p>Join brave knights and powerful wizards as they confront fierce dragons and dark sorcery in the magical realm of Dracoria.</p>
-        </article>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2>Explore Book Categories</h2>
+        <details>
+            <summary>What's Your Favorite Genre and Theme?</summary>
+            <form>
+                <fieldset>
+                    <legend>Choose a Genre:</legend>
+                    <select id="genre">
+                        <optgroup label="Fiction">
+                            <option value="fantasy">Fantasy</option>
+                            <option value="mystery">Mystery</option>
+                            <option value="sci-fi">Science Fiction</option>
+                        </optgroup>
+                        <optgroup label="Non-Fiction">
+                            <option value="history">History</option>
+                            <option value="biography">Biography</option>
+                            <option value="self-help">Self-Help</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose a Theme:</legend>
+                    <select id="theme">
+                        <optgroup label="Adventure">
+                            <option value="action">Action-packed</option>
+                            <option value="exploration">Exploration</option>
+                        </optgroup>
+                        <optgroup label="Romance">
+                            <option value="love">Love story</option>
+                            <option value="heartbreak">Heartbreak</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </details>
+    </article>
+
+    <aside>
+        <h2>Recommendations</h2>
+        <p>Here are some recommended books:</p>
+        <ul>
+            <li>Fantasy - Action-packed: "Percy Jackson" <span class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</span></li>
+            <li>Realistic Fiction: "The Namesake" <span class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</span></li>
+            <li>History - Biography: "Steve Jobs" <span class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</span></li>
+        </ul>
+    </aside>
+
+
+
+    <section>
+        <h2>Helpful Info </h2>
+        <p>How Packed The Library Is Right Now::</p>
+        <meter min="0" max="5" value="3">3 out of 5</meter>
     </section>
-    <section id="sci-fi-section">
-        <h2>Sci-Fi Wonders</h2>
-        <article>
-            <h3>Galactic Explorers</h3>
-            <p>Venture into the uncharted depths of space aboard the starship Odyssey and encounter alien civilizations, cosmic phenomena, and the mysteries of the universe.</p>
-        </article>
-        <article>
-            <h3>Cybernetic Revolution</h3>
-            <p>Witness the rise of artificial intelligence and cybernetic enhancements as humanity navigates the technological frontier in a world shaped by innovation and ambition.</p>
-        </article>
-    </section>
-    <section id="mystery-section">
-        <h2>Mysterious Tales</h2>
-        <article>
-            <h3>The Secret Garden</h3>
-            <p>Discover the hidden wonders of an ancient garden where magic blooms and forgotten secrets await those who dare to unlock its mysteries.</p>
-        </article>
-        <article>
-            <h3>The Case of the Missing Manuscript</h3>
-            <p>Join intrepid detectives as they unravel the clues and solve the enigma of a vanished manuscript in a thrilling tale of mystery and intrigue.</p>
-        </article>
+
+    <section>
+        <img src="library.png" alt="Library Map" usemap="#librarymap">
+        <map name="librarymap">
+            <area shape="rect" coords="0,0,50,50" alt="Zone A">
+            <area shape="circle" coords="100,100,50" alt="Zone B">
+            <area shape="poly" coords="50,150,100,200,0,200" alt="Zone C">
+        </map>
     </section>
     <footer>
-        <p>© 2024 The Dream Library. All rights reserved.</p>
+        <p>“The man who does not read has no advantage over the man who cannot read.” - Mark Twain</p>
+        <p>&copy; 2024 Imaginary Library. All rights reserved.</p>
     </footer>
 </body>
 </html>
