@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Library Experience</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff6f61;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #ff6f61;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff8b7d;
+        }
+
+        /* Form styles */
+        form {
+            margin-bottom: 20px;
+        }
+
+        form fieldset {
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        form legend {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        form select {
+            font-size: 1em;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Content section styles */
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .rating {
+            color: #ffac33;
+            font-size: 1.2em;
+            float: right;
+        }
+
+        .rating::before {
+            content: "\2605";
+        }
+
+        section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the Imaginary Library!</h1>
+        <p>Explore the world of books with us.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dropdown -->
+    <h2>Explore Book Categories</h2>
+    <details>
+        <summary>What's Your Favorite Genre and Theme?</summary>
+        <form>
+            <fieldset>
+                <legend>Choose a Genre:</legend>
+                <select id="genre">
+                    <optgroup label="Fiction">
+                        <option value="fantasy">Fantasy</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="sci-fi">Science Fiction</option>
+                    </optgroup>
+                    <optgroup label="Non-Fiction">
+                        <option value="history">History</option>
+                        <option value="biography">Biography</option>
+                        <option value="self-help">Self-Help</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Choose a Theme:</legend>
+                <select id="theme">
+                    <optgroup label="Adventure">
+                        <option value="action">Action-packed</option>
+                        <option value="exploration">Exploration</option>
+                    </optgroup>
+                    <optgroup label="Romance">
+                        <option value="love">Love story</option>
+                        <option value="heartbreak">Heartbreak</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </details>
+
+    <!-- Recommendations -->
+    <h2>Recommendations</h2>
+    <p>Here are some recommended books:</p>
+    <ul>
+        <li>Fantasy - Action-packed: "Percy Jackson" <span class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</span></li>
+        <li>Realistic Fiction: "The Namesake" <span class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</span></li>
+        <li>History - Biography: "Steve Jobs" <span class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</span></li>
+    </ul>
+
+    <!-- Helpful Info -->
+    <section>
+        <h2>Helpful Info </h2>
+        <p>How Packed The Library Is Right Now:</p>
+        <meter min="0" max="5" value="3">3 out of 5</meter>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>“The man who does not read has no advantage over the man who cannot read.” - Mark Twain</p>
+        <p>&copy; 2024 Imaginary Library. All rights reserved.</p>
+    </footer>
+</body>
+</
